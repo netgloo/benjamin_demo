@@ -1,0 +1,7 @@
+.content-wrapper, .right-side, .main-footer {
+  transition: none;
+}
+
+.main-header > .navbar {
+  transition: none;
+}
