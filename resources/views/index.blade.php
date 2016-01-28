@@ -23,11 +23,4 @@
     This is the index page available at root url "/". Server side this page is inside a view named <code>index.blade.php</code>.
   </p>
 
-  <p class="lead">
-    In the footer below is written the server time when this page is first loaded. When you see the server time change it means there has been a page reload.
-  </p>
-  <p class="lead">
-    <strong>Tip:</strong> try to force a page reload pressing the refresh button (<i class="fa fa-refresh"></i>) on your browser.
-  </p>
-
 @endsection
