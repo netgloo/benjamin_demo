@@ -7,12 +7,21 @@ Benjamin.on({
    * callback
    */
   'ready': function() {
-    console.log('ready');
+
+    // Track the page with Google Analytics
+    if (typeof ga !== 'undefined') {
+      ga('set', { page: window.location.pathname, title: document.title });
+      ga('send', 'pageview');
+    }
+
+    // Init sidebar toggle
     $('.sidebar-toggle').click(function() {
       $('body').toggleClass('sidebar-open');
       $('body').toggleClass('sidebar-collapse');
       return;
     });
+
+    return;
   },
 
 
@@ -20,7 +29,6 @@ Benjamin.on({
    * After a page is changed
    */
   'after': function(next) {
-    console.log('after');
     return next();
   },
 
@@ -29,7 +37,6 @@ Benjamin.on({
    * The page will be changed
    */
   'out': function(next) {
-    console.log('out');
     return next();
   },
   
